@@ -1,0 +1,10 @@
+.press {
+  margin-top: 10px 15px;
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  padding-bottom: 4px;
+  font-size: 35px;
+  background-color: lightgreen;
+  width: 20%;
+}
