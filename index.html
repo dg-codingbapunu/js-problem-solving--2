@@ -8,23 +8,14 @@
 
   <body>
     <script>
-      // 11
-      let age = 45;
-      let gender = "male";
-      let finnalDiscount;
-      if (age <= 5) {
-        finnalDiscount = 0;
-      } else if (gender === "female") {
-        finnalDiscount = 50;
-      } else if (age <= 8) {
-        finnalDiscount = 50;
-      } else if (age >= 65) {
-        finnalDiscount = 30;
-      } else {
-        finnalDiscount = 0;
+      //13
+      function isOdd(number) {
+        let rem = number % 2;
+        let isOdd = rem == 1;
+        return isOdd;
       }
-
-      console.log(`your finnal ticket discount is ${finnalDiscount}`);
+      console.log(isOdd(6));
+      console.log(isOdd(33));
     </script>
   </body>
 </html>
