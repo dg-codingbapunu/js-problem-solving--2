@@ -3,24 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>if & else</title>
-  </head>
-
-  <body>
-    <script>
-      //14
-      function larger(num1, num2) {
-        if (num1 > num2) {
-          return num1;
-        } else {
-          return num2;
-        }
+    <title>Image Rotation</title>
+    <style>
+      #container {
+        text-align: center;
       }
+      #rotateBtn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img id="image" src="your_image.jpg" alt="Image" width="300" />
+      <br />
+      <button id="rotateBtn">Rotate</button>
+    </div>
 
-      console.log(larger(1, 5));
-      console.log(larger(5, 5));
-      console.log(larger(12, 5));
-      console.log(larger(1, 45));
+    <script>
+      const image = document.getElementById("image");
+      const rotateBtn = document.getElementById("rotateBtn");
+      let rotationDegree = 0;
+
+      rotateBtn.addEventListener("click", () => {
+        rotationDegree += 10; // Increment rotation by 10 degrees
+        if (rotationDegree >= 360) {
+          rotationDegree = 0; // Reset to 0 after reaching 360 degrees
+        }
+        image.style.transform = `rotate(${rotationDegree}deg)`;
+      });
     </script>
   </body>
 </html>
