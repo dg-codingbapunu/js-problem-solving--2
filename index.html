@@ -26,10 +26,10 @@
     <script>
       const image = document.getElementById("image");
       const rotateBtn = document.getElementById("rotateBtn");
-      let rotationDegree = 0;
+      let rotationDegree = 10;
 
       rotateBtn.addEventListener("click", () => {
-        rotationDegree += 10; // Increment rotation by 10 degrees
+        rotationDegree += 260;
         if (rotationDegree >= 360) {
           rotationDegree = 0;
         }
