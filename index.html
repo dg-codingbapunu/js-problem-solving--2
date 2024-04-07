@@ -3,38 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image Rotation</title>
-    <style>
-      #container {
-        text-align: center;
-      }
-      #rotateBtn {
-        margin-top: 20px;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-      }
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div id="container">
-      <img id="image" src="your_image.jpg" alt="Image" width="300" />
-      <br />
-      <button id="rotateBtn">Rotate</button>
-    </div>
-
-    <script>
-      const image = document.getElementById("image");
-      const rotateBtn = document.getElementById("rotateBtn");
-      let rotationDegree = 10;
-
-      rotateBtn.addEventListener("click", () => {
-        rotationDegree += 260;
-        if (rotationDegree >= 360) {
-          rotationDegree = 0;
-        }
-        image.style.transform = `rotate(${rotationDegree}deg)`;
-      });
-    </script>
+    <header>
+      <nav class="myntra">Home</nav>
+      <nav class="myntra">Product</nav>
+      <nav class="myntra">Contact</nav>
+      <nav class="myntra">Menu</nav>
+      <nav class="myntra">Preview</nav>
+    </header>
   </body>
 </html>
