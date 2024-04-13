@@ -7,10 +7,10 @@
   </head>
   <body>
     <script>
-      function greet(names) {
-        return "Hello, " + names + "!";
-      }
-      console.log(greet("Emils"));
+      setTimeout(function () {
+        console.log("Delayed output");
+      }, 2000);
+      console.log("Immediate output");
     </script>
   </body>
 </html>
