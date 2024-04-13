@@ -7,10 +7,14 @@
   </head>
   <body>
     <script>
-      setTimeout(function () {
-        console.log("Delayed output");
-      }, 2000);
-      console.log("Immediate output");
+      function outerFunction() {
+        function innerFunction() {
+          console.log("Inside inner function");
+        }
+        innerFunction();
+        console.log("Inside outer function");
+      }
+      outerFunction();
     </script>
   </body>
 </html>
